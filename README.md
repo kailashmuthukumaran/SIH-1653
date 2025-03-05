@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
 # Date: 5-03-2025
-## Register Number: 212223230217
-## Name: Stephen raj Y
+## Register Number: 212222040068
+## Name: Kailash S M
 ## Problem Title
 SIH 1653: Web based Selector-Applicant Simulation Software
 ## Problem Description
