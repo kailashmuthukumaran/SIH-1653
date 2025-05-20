@@ -1,50 +1,125 @@
 # Smart India Hackathon Workshop
-# Date: 5-03-2025
-## Register Number: 212222040068
-## Name: Kailash S M
-## Problem Title
-SIH 1653: Web based Selector-Applicant Simulation Software
-## Problem Description
-Background: Recruitment and Assessment Centre (RAC) under DRDO, Ministry of Defence carries out interviews for applications received against advertised vacancies and for promotion to next higher grade for scientific manpower inducted within DRDO. Description: The process of interviewing is a challenging task. An unbiased objective interviewing process helps identify the right talent. The basic process of an interview involves posing a set of questions by an interviewer and thereafter evaluating responses from candidates. Thus, the questions asked should be relevant and match the area/ expertise of the applicant and the responses should also be of relevance w.r.t. the question asked. Expected Solution: The proposed solution should provide experts as well as candidates a real life Board Room experience, starting with initial ice-breaking questions leading to in-depth techno-managerial (depending on the level of candidate) questions. It shall also be able to provide a quantifiable score for experts as well as the candidate for the relevancy of questions w.r.t. the area/ expertise of the applicant. Similarly, candidate responses should also be graded for relevancy w.r.t. the question asked, finally assisting in arriving at an overall score for the subject knowledge of the candidate and thus his/ her suitability against the advertised post.
 
-## Problem Creater's Organization
-Ministry of Defence
+## Register Number : 212222040068
+## Name : KAILASH SM 
 
-## Idea
-1.Nearest E-Waste Facility Locator: Use Geocoding AI to find nearby e-waste facilities based on the user's current location. Implement image recognition to categorize e-waste when users upload photos, suggesting the appropriate recycling facility.
+## Project: Railway Station Smart Navigation System (RSNS)
+# Problem Statement
+Smart India Hackathon 2025 - SIH 1710
+Title: Enhancing Navigation for Railway Station Facilities and Locations
 
-2.Virtual Assistant: Offer a virtual assistant that provides guidance on proper e-waste disposal methods and data wiping techniques for devices with sensitive information.
+Passengers often face difficulties navigating large and unfamiliar railway stations. Our goal is to design a multi-platform navigation system that provides real-time, accurate, and accessible directions inside railway stations.
 
-3.Educational Pop-ups: Display educational pop-ups to raise awareness about the harmful effects of e-waste on the environment and human health.
+# Proposed Solution
+We propose RSNS (Railway Station Smart Navigation System) which consists of:
 
-4.Reward Points System: Introduce a reward points system where users earn points for each e-waste disposal, encouraging participation in recycling programs.
+1. Mobile Application (Android & iOS)
+3D interactive maps of the station.
 
-5.Real-time Analytics Dashboard: Provide e-waste facilities with a dashboard showcasing real-time analytics and insights, including recycling rates and energy savings, to help users understand their impact on the environment.
+Step-by-step walking navigation.
 
-## Proposed Solution / Architecture Diagram
+Real-time facility updates.
 
-![image](https://github.com/user-attachments/assets/f7224368-ef3c-407f-af96-86e87738628a)
+Voice-assisted navigation (for visually impaired passengers).
 
-## Use Cases
-![Uploading image.png…]()
+Accessibility options (wheelchair-friendly paths, elevators).
+
+2. Digital Kiosks at Stations
+Touch-screen kiosks at multiple entry points.
+
+Search any location or facility easily.
+
+Generate QR code for navigation path to continue on mobile.
+
+3. Admin Panel (Web)
+For railway officials to update:
+
+# Map layouts
+
+Facility locations
+
+Temporary changes (construction, closed paths, etc.)
+
+4. Integration with Existing Indian Railway Apps
+Connect with apps like IRCTC Rail Connect or station Wi-Fi apps.
+
+Provide station navigation options before passenger arrives.
+
+# Railway Station Smart Navigation System Overview
+![21](https://github.com/user-attachments/assets/00c2bcba-1f73-45a9-8a79-91a5e39727ad)
 
 
-## Technology Stack
-React.js
+# Key Features
 
-Node.js
+Feature	Description
+📱 Mobile App	3D Maps, Real-time navigation, Voice instructions
+🖥️ Digital Kiosks	Station touchscreens for directions
+👩‍🦯 Accessibility Support	Voice navigation, wheelchair-accessible paths
+🔄 Real-time Updates	Facility/Route changes reflected immediately
+🔗 Integration	Link with existing IRCTC apps, UTS apps
+🗂️ Admin Dashboard	Update maps and facility info easily
+🧩 Technical Stack
 
-PostgreSQL
+# Component	Technology
+Mobile App	Flutter (Cross-platform)
+Backend	Node.js + Express
+Database	MongoDB Atlas
+Real-Time Updates	WebSocket (Socket.IO)
+Maps & Navigation	Mapbox SDK / Google Maps SDK (Customized)
+Kiosk App	ReactJS + Electron
+Admin Panel	ReactJS + Tailwind CSS
 
-Google maps
+# Passenger Navigation Process
+![22](https://github.com/user-attachments/assets/eb32e5a7-cd34-4229-8c64-e2b78fe65090)
 
-Firebox Authenticator
 
-Git , Postman or Insomnia
 
-## Dependencies
-Mapping service- 10 days
+# Architecture Overview
+User (Mobile/Kiosk) -> API Gateway -> Backend Server -> Database
+                               ↳ Map Rendering Service (3D)
+                               ↳ Voice Assistant Service
+Admin Panel -> Backend -> Database
 
-Data collection- 10 days
+# How it Works
+Passenger enters station.
 
-budget- rs.50,000
+Uses kiosk or mobile app to select their destination (e.g., "Platform 5", "Restroom", "Food Court").
+
+App generates step-by-step walking path.
+
+Voice assistant can guide them if needed.
+
+If facilities are moved (construction etc.), real-time update is pushed to user devices.
+
+Admin dashboard allows station authorities to modify the station map dynamically.
+
+# Future Enhancements
+AR Navigation inside station (Augmented Reality walking guide).
+
+Multilingual voice assistants (Hindi, Tamil, etc.).
+
+AI-based crowd density monitoring to suggest less crowded routes.
+
+Integration with station parking and EV charging stations.
+
+# Sample UI Screens (can be added later)
+Home Screen – "Find a Facility" / "Get Directions"
+
+Map Screen – 3D Station Layout
+
+Voice Guide Screen – Accessible Mode
+
+Admin Panel – Update Facility Locations
+
+Kiosk Interface – Touch-to-search Navigation
+
+# Conclusion
+This solution directly addresses the pain points of millions of Indian railway passengers by providing:
+
+Better navigation inside massive stations,
+
+Inclusive design for disabled passengers,
+
+Real-time dynamic updates,
+
+and integration with existing railway apps — making travel easier, faster, and smarter.
